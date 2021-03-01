@@ -3483,6 +3483,7 @@
 
 			#header > a:last-child {
 				padding-right: 1.25em;
+				color: black;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -3502,12 +3503,7 @@
 
 			}
 
-		#header.reveal {
-			-moz-animation: reveal-header 0.5s ease;
-			-webkit-animation: reveal-header 0.5s ease;
-			-ms-animation: reveal-header 0.5s ease;
-			animation: reveal-header 0.5s ease;
-		}
+
 
 		#header.alt {
 			-moz-animation: none;
