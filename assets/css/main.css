@@ -2596,7 +2596,12 @@
 					font-size: 2em;
 				}
 
+		.col1 ul.icons {
+			display: block;
+		}
+
 		.col1 ul.icons li {
+			display: block;
 			width: 100%;
 		}
 
@@ -2626,6 +2631,11 @@
 				text-align: center;
 			}
 
+		    .col1 ul.icons li {
+			width: auto;
+			display: block;
+			}
+			
 			.col1 ul.icons i {
 				font-size: 1.2em;
 				width: 1.5em;
