@@ -1564,6 +1564,7 @@
 
 		html, body {
 			min-width: 320px;
+			padding-top: 50px;
 		}
 
 	}
@@ -3916,3 +3917,4 @@
 			}
 
 		}
+
