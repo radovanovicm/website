@@ -3736,11 +3736,19 @@
 					}
 				
 					#menu > ul.links > li > a:not(.button) {
-						font-size: 0.65em !important;
+						font-size: 0.7em !important;
 						text-align: center !important;
-						padding: 0.4em !important;
+						padding: 0.4em 0.6em !important;
 					}
 			}
+
+		@media screen and (max-width: 736px) {
+
+			#menu > ul.links > li > a:not(.button) {
+				font-size: 0.7em !important;
+				text-align: center !important;
+			}
+		}
 
 		#menu .close {
 			display: none;
