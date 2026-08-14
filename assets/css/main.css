@@ -3681,9 +3681,27 @@
 		@media screen and (max-width: 736px) {
 
 			#menu {
-				padding: 2.5em 1.75em;
+				display: block !important;
+				width: 100%;
 			}
 
+			#menu > ul.links {
+				display: flex !important;
+				flex-direction: column !important;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+
+			#menu > ul.links > li {
+				width: 100%;
+				text-align: center;
+				flex: 1 1 50%; 
+			}
+
+			#menu > ul.links > li > a {
+				display: block;
+				padding: 12px;
+			}
 		}
 
 /* Banner */
