@@ -2161,14 +2161,6 @@
 
 		@media screen and (max-width: 736px) {
 
-			.col1 {
-				order: 1 !important;
-			}
-
-			.col2 {
-				order: 2 !important;
-			}
-
 			.flex.flex-2 .col, .flex.flex-3 .col, .flex.flex-4 .col {
 				width: 100%;
 				-moz-order: 2;
