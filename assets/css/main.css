@@ -3639,6 +3639,17 @@
 						border-top: 0 !important;
 					}
 
+					@media screen and (max-width: 736px) {
+						#menu > ul.links {
+							flex-wrap: wrap;
+						}
+
+						#menu > ul.links > li > a:not(.button) {
+							font-size: 0.85em;
+							padding: 0.5em;
+						}
+					}
+
 		#menu .close {
 			display: none;
 		}
