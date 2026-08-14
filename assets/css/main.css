@@ -3697,10 +3697,25 @@
 					overflow: hidden;
 				}
 
+					#menu > ul.links > li {
+						text-align: center;
+					}
+
+						#menu > ul.links > li > a,
+						#menu ul.links li a {
+							font-size: 0.65em;
+							text-align: center;
+							padding: 0.6em;
+							display: block;
+						}
+
 					#menu > ul.links {
+						justify-content: center;
+						align-items: center;
 						display: none;
 						width: 100%;
 						flex-direction: column;
+						padding: 0.6em;
 					}
 
 					#menu:hover > ul.links,
@@ -3718,6 +3733,12 @@
 						padding: 0em 0;
 						line-height: 1;
 						cursor: pointer;
+					}
+				
+					#menu > ul.links > li > a:not(.button) {
+						font-size: 0.65em !important;
+						text-align: center !important;
+						padding: 0.4em !important;
 					}
 			}
 
