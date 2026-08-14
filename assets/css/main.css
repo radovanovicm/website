@@ -3690,17 +3690,36 @@
 					#menu > ul.links > li:first-child > a:not(.button) {
 						border-top: 0 !important;
 					}
+			@media screen and (max-width: 736px) {
 
-					@media screen and (max-width: 736px) {
-						#menu > ul.links {
-							flex-wrap: wrap;
-						}
+				#menu {
+					height: auto;
+					overflow: hidden;
+				}
 
-						#menu > ul.links > li > a:not(.button) {
-							font-size: 0.85em;
-							padding: 0.5em;
-						}
+					#menu > ul.links {
+						display: none;
+						width: 100%;
+						flex-direction: column;
 					}
+
+					#menu:hover > ul.links,
+					#menu:focus-within > ul.links {
+						display: flex;
+					}
+
+					#menu::before {
+						content: "MENU";
+						display: block;
+						color: white;
+						text-align: center;
+						font-weight: bold;
+						font-size: 0.8em;
+						padding: 0em 0;
+						line-height: 1;
+						cursor: pointer;
+					}
+			}
 
 		#menu .close {
 			display: none;
@@ -3727,8 +3746,12 @@
 			@media screen and (max-width: 736px) {
 
 				#menu .close {
-					height: 4em;
-					line-height: 4em;
+					display: block;
+					position: absolute;
+					right: 1em;
+					top: 0.5em;
+					color: white;
+					cursor: pointer;
 				}
 
 			}
