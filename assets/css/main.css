@@ -3704,9 +3704,9 @@
 
 						#menu > ul.links > li > a,
 						#menu ul.links li a {
-							font-size: 0.65em;
+							font-size: 0.8em;
 							text-align: center;
-							padding: 0.6em;
+							padding: 0.8em;
 							display: block;
 						}
 
@@ -3734,7 +3734,7 @@
 						color: white;
 						text-align: center;
 						font-weight: bold;
-						font-size: 1em;
+						font-size: 1.2em;
 						padding: 0em;
 						line-height: 1;
 						cursor: pointer;
@@ -3777,11 +3777,6 @@
 
 				#menu .close {
 					display: none;
-					position: absolute;
-					right: 1em;
-					top: 0.5em;
-					color: white;
-					cursor: pointer;
 				}
 
 			}
@@ -3799,6 +3794,10 @@
 
 			#menu {
 				padding: 2.5em 1.75em;
+			}
+
+			#menu .close:before {
+				font-size: 1.25em;
 			}
 
 		}
