@@ -3682,20 +3682,25 @@
 
 			#menu {
 				display: block !important;
+				position: fixed;
+				top: 0; 
+				left: 0;
 				width: 100%;
+				z-index: 99999;
+			}
+
+			body {
+				padding-top: 60px;
 			}
 
 			#menu > ul.links {
 				display: flex !important;
-				flex-direction: column !important;
-				align-items: center;
 				flex-wrap: wrap;
+				justify-content: center;
 			}
 
 			#menu > ul.links > li {
 				width: 100%;
-				text-align: center;
-				flex: 1 1 50%; 
 			}
 
 			#menu > ul.links > li > a {
