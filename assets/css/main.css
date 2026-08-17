@@ -30,6 +30,8 @@
 
 	@media screen and (max-width: 736px) {
 		body {padding-top: 80px;
+			  text-align: center;
+
 		}
 
 	}
@@ -1607,7 +1609,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -1615,7 +1617,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -1661,7 +1663,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0em 0;
 		color: #333333;
 	}
 
@@ -1785,6 +1787,7 @@
 
 	header p {
 		font-size: 1.25em;
+		padding-bottom: 0px;
 	}
 
 	hr {
@@ -2085,21 +2088,40 @@
 
 		.flex.flex-2 .col {
 			width: 48%;
+			padding-top: 2em;
+			padding-bottom: 2em;
 		}
 
 			.flex.flex-2 .col.col1 {
-				width: 20%;
+				width: 30%;
+				font-size:0.9em;
 			}
 
 			.flex.flex-2 .col.col2 {
-				width: 72%;
+				width: 65%;
+				padding-top: 2.75em;
 			}
 
 			@media screen and (max-width: 736px) {
 
+
+				.flex.flex-2 .col {
+					padding-bottom: 0em;
+				}
+
+				.flex.flex-2 .col.col1 {
+					font-size: 1em;
+					padding-top: 0em;
+				}
+
+				.flex.flex-2 .col.col2 {
+					padding-top:0em;
+				}
+
 				.flex.flex-2 .col.col1, .flex.flex-2 .col.col2 {
 					width: 100%;
-					margin-bottom: 2em;
+					margin-bottom: 0em;
+					text-align: center;
 				}
 
 					.flex.flex-2 .col.col1 .image, .flex.flex-2 .col.col2 .image {
@@ -2510,6 +2532,16 @@
 			border-radius: 100%;
 		}
 
+		.col1 .image.round {
+			border-radius: 100%;
+			max-width: 60%;
+		}
+
+		.col1 .image.fit {
+		   width:60%;
+		   margin: 0 auto 1em auto;
+		}
+
 			.image.round img {
 				border-radius: 100%;
 			}
@@ -2619,7 +2651,7 @@
 		.col1 ul.icons a {
 			display: inline-flex;
 			align-items: center;
-			gap: 10px;
+			gap: 1.5em;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2772,7 +2804,7 @@
 
 	header p {
 		position: relative;
-		margin: 0 0 1.5em 0;
+		margin: 0 0 0em 0;
 	}
 
 	header h2 + p {
@@ -2793,7 +2825,7 @@
 	}
 
 	header p {
-		color: #bfbfbf;
+		color: #717F80 !important; 
 	}
 
 /* Tab */
@@ -2926,7 +2958,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 3em 0 2em 0;
 		position: relative;
 	}
 
@@ -2938,7 +2970,7 @@
 		}
 
 		.wrapper header {
-			margin-bottom: 4em;
+			margin-bottom: 2em;
 		}
 
 			@media screen and (max-width: 736px) {
@@ -2951,8 +2983,31 @@
 
 		.wrapper.style1 {
 			background-color: #fafafa;
-			color: #999999;
+			color: #999999;		
 		}
+
+			.wrapper.style1 .image-container {
+				display: flex;
+				align-items: center;
+			    justify-content: center;
+				height: 100%;
+			}
+
+			.wrapper.style1 .row {
+				display: flex;
+				align-items: center;
+				padding-bottom: 2em;
+			}
+
+			@media screen and (max-width: 736px) {
+				.wrapper.style1 .row {
+					display: block;
+				}
+
+				.wrapper.style1 .image-container{
+				    padding-bottom: 20px;
+				}
+			}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
 				color: #000;
@@ -4032,4 +4087,3 @@
 			}
 
 		}
-
