@@ -2973,6 +2973,10 @@
 			margin-bottom: 2em;
 		}
 
+		.wrapper.style1 p {
+			margin: 0;
+		}
+
 			@media screen and (max-width: 736px) {
 
 				.wrapper header {
